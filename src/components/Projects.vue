@@ -20,9 +20,9 @@
 					cols="12"
 					md="6"
 				>
-					<v-carousel cycle height="auto" show-arrows-on-hover>
-						<v-carousel-item v-for="(image, j) in images" :key="j">
-							<v-img :src="image"></v-img>
+					<v-carousel height="auto">
+						<v-carousel-item eager v-for="(image, j) in images" :key="j">
+							<v-img eager :src="image"></v-img>
 						</v-carousel-item>
 					</v-carousel>
 
@@ -109,7 +109,7 @@
 					},
 					{
 						images: [
-							"https://lh5.googleusercontent.com/nber92_cVJ64pY8YK4r5o-qmqTbzHixqrItAsgLS3yoaFZ2DWJ6pEv1x40KtaM-rdn9D8yGHmO3poEfOrMjY=w1280-h842-rw",
+							"https://lh3.google.com/u/0/d/1pMHVTtoBCjFDezopKKd-655hIVDIps38=w3000-h6495-iv1",
 							"https://lh3.google.com/u/0/d/10LHKToGaZiW7ZIypb-_H9RlBLxKB1vqe=w1280-h891-iv1"
 						],
 						title: "Pokedex",
@@ -159,6 +159,6 @@
 					}
 				]
 			};
-		}
+		},
 	};
 </script>
