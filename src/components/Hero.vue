@@ -25,10 +25,18 @@
 							</v-col>
 
 							<v-col class="white--text text-center" cols="12">
-								<v-btn class="navigator" fab outlined @click="$vuetify.goTo('#intro')">
-									<v-icon class="navigator-icon">mdi-chevron-double-down</v-icon>
-								</v-btn>
+								<v-btn width="110px" outlined @click="$vuetify.goTo('#intro')">Intro</v-btn>
+								<v-btn width="110px" outlined @click="$vuetify.goTo('#cv')">CV</v-btn>
 							</v-col>
+								<v-col class="white--text text-center" cols="12">
+								<v-btn width="110px" outlined @click="$vuetify.goTo('#projects')">Projects</v-btn>
+								<v-btn width="110px" outlined @click="$vuetify.goTo('#courses')">Courses</v-btn>
+							</v-col>
+						</v-row>
+						<v-row align="center" class="mx-auto" justify="center">
+							<v-btn class="navigator" fab outlined @click="$vuetify.goTo('#intro')">
+								<v-icon class="navigator-icon">mdi-chevron-double-down</v-icon>
+							</v-btn>
 						</v-row>
 					</v-container>
 				</v-theme-provider>
@@ -38,12 +46,12 @@
 </template>
 
 <script>
-import Social from "@/components/Social"
-export default {
-	components: {
-		Social
-	}
-}
+	import Social from "@/components/Social";
+	export default {
+		components: {
+			Social
+		}
+	};
 </script>
 
 <style scoped>
