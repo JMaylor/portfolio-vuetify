@@ -1,6 +1,5 @@
 <template>
 	<section id="intro">
-		<div class="py-12"></div>
 
 		<v-container class="text-center">
 			<h2 class="display-2 font-weight-bold mb-3 teal--text text--darken-2">Intro</h2>
@@ -12,14 +11,16 @@
 			</v-responsive>
 
 			<v-responsive class="mx-auto title font-weight-light mb-8" max-width="720">
-				My name is Joe, I'm a 26 year-old self-taught programmer. I've been working as a currency trader and execution analyst for the past five years, since graduating.
+				My name's Joe, I'm a 26 year-old self-taught programmer. I've been working as a currency trader and execution analyst for the past five years, since graduating.
 				<br />
-				<br />I started learning code initially for fun, and I'm now hooked and looking to make it something I do full time, not just part time.
+				<br />I started learning code initially for fun, and I'm now hooked and looking to make it something I do full time.
+				<br />
+				<br /> I used MatLab and Java at university, and since graduating I've worked extensively with VBA at work, and self-taught Python, HTML, CSS and JavaScript.
 			</v-responsive>
-<!-- 
-			<v-avatar class="elevation-12 mb-12" size="128">
-				<span class="teal--text display-3">26</span>
-			</v-avatar> -->
+
+			<v-avatar class="elevation-6 mb-12" size="128">
+				<span class="teal--text display-3">JM</span>
+			</v-avatar>
 
 			<div></div>
 			<v-row class="justify-center mb-2">

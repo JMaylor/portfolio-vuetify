@@ -28,11 +28,13 @@
 
 					<v-container>
 						<v-row>
-							<a :href="frontEnd.live" target="_blank" class="text-decoration-none teal--text"><h3 class="font-weight-black mb-4 text-uppercase" v-text="title"></h3></a>
+							<a :href="frontEnd.live" target="_blank" class="text-decoration-none teal--text">
+								<h3 class="font-weight-black mb-4 text-uppercase" v-text="title"></h3>
+							</a>
 						</v-row>
 
 						<v-row>
-							<span class="title font-weight-light mb-5" v-text="text"></span>
+							<span class="title font-weight-light mb-5" v-html="text"></span>
 						</v-row>
 
 						<v-row>
@@ -66,9 +68,14 @@
 					<v-divider />
 				</v-col>
 			</v-row>
-			<v-row class="justify-center">
+			<v-row class="justify-center mb-2">
 				<v-btn class="navigator" fab outlined @click="$vuetify.goTo('#cv')">
 					<v-icon class="navigator-icon">mdi-chevron-double-up</v-icon>
+				</v-btn>
+			</v-row>
+			<v-row class="justify-center">
+				<v-btn class="navigator" fab outlined @click="$vuetify.goTo('#courses')">
+					<v-icon class="navigator-icon">mdi-chevron-double-down</v-icon>
 				</v-btn>
 			</v-row>
 		</v-container>
@@ -82,66 +89,70 @@
 				articles: [
 					{
 						images: [
-							"https://d33wubrfki0l68.cloudfront.net/5f5d00a407291a0008104b3d/screenshot.png"
+							"https://lh3.google.com/u/0/d/1vwBpg_GKNphXkKfGCsHcUADPyVCSNgqr=w1280-h891-iv1",
+							"https://lh3.google.com/u/0/d/1Vpz0LmSyGN-obmum4M6wy6eX5XNDt6Qb=w1280-h891-iv1",
+							"https://lh3.google.com/u/0/d/1X2zZciwdxdrpq6cKy2A21SUEZxpMBFIj=w1280-h590-iv1",
+							"https://lh3.google.com/u/0/d/1ggtNKNp0Ogdtw92tL50mEXBCLiax8Lf_=w1280-h590-iv1",
+							"https://lh3.google.com/u/0/d/1nq7TxxqgYPkK-bWIko7Al7MGBhltLV47=w1280-h590-iv1"
 						],
 						title: "Walkies",
 						text:
-							"I built a website for dog owners who sometimes want some human company while they walk their pets. A RESTful API built with Python/Flask performs geoqueries with location data in MongoDB, allowing you to find other users nearby, and arrange to meet up with them. The front end is built with VueJS, Vuex and Vue Router.",
+							"I built a website for dog owners who sometimes want some human company while they walk their pets. A <b>RESTful API</b> built with <b>Python</b>/Flask performs <b>geoqueries</b> with location data in <b>MongoDB</b>, allowing you to find other users nearby, and arrange to meet up with them. The front end is built with <b>VueJS, Vuex and Vue Router</b>.",
+						fatechs: ["mdi-vuejs"],
 						backEnd: {
-							techs: ["Python", "Flask", "MongoDB"],
 							repo: "https://github.com/JMaylor/walkies-backend"
 						},
 						frontEnd: {
-							techs: ["mdi-vuejs", "mdi-bootstrap"],
 							repo: "https://github.com/JMaylor/walkies-frontend",
 							live: "https://walkies.maylor.io"
 						}
 					},
 					{
 						images: [
-							"https://d33wubrfki0l68.cloudfront.net/5f5d060af1a4de0007c6c74b/screenshot.png"
+							"https://lh5.googleusercontent.com/nber92_cVJ64pY8YK4r5o-qmqTbzHixqrItAsgLS3yoaFZ2DWJ6pEv1x40KtaM-rdn9D8yGHmO3poEfOrMjY=w1280-h842-rw",
+							"https://lh3.google.com/u/0/d/10LHKToGaZiW7ZIypb-_H9RlBLxKB1vqe=w1280-h891-iv1"
 						],
 						title: "Pokedex",
 						text:
-							"Nam ut leo ipsum. Maecenas pretium aliquam feugiat. Aenean vel tempor est, vitae tincidunt risus. Sed sodales vestibulum nibh.",
+							"Utilising an external API, I built a pokedex with <b>VueJS</b>. It allows you to search for pokemon, view their stats, see their evolution chain and add them to your favourites, which persists in <b>localStorage</b>.",
 						backEnd: {
 							external: "https://pokeapi.co"
 						},
 						frontEnd: {
-							techs: ["mdi-vuejs", "mdi-bootstrap"],
 							repo: "https://github.com/JMaylor/pokedex",
 							live: "https://pokedex.maylor.io"
 						}
 					},
 					{
 						images: [
-							"https://d33wubrfki0l68.cloudfront.net/5f5940c3ca644e00071c867f/screenshot.png"
+							"https://lh3.google.com/u/0/d/10cUUfu49oCv_U-z8wZVSdWieF83ishAM=w1280-h590-iv1",
+							"https://lh3.google.com/u/0/d/1viFOjgBK9ddZQhwQC8Kl4FFg7v0U4fPZ=w1280-h590-iv1",
+							"https://lh3.google.com/u/0/d/1dxTRXfLo8F1rCd5Q158-U63eXyQhBL8i=w1280-h590-iv1"
 						],
 						title: "Weather",
 						text:
-							"Vestibulum in dictum velit, in rhoncus nibh. Maecenas neque libero, interdum a dignissim in, aliquet vitae lectus. Phasellus lorem enim, luctus ut velit eget.",
+							"Utilising an external API, I built a weather app with <b>VueJS</b>. The site will automatically ask for access to your location and pass this information to the API.",
 						backEnd: {
 							external: "https://weatherapi.com"
 						},
 						frontEnd: {
-							techs: ["mdi-vuejs"],
 							repo: "https://github.com/JMaylor/vue-weather-app",
 							live: "https://weather.maylor.io"
 						}
 					},
 					{
 						images: [
-							"https://d33wubrfki0l68.cloudfront.net/5f5e4ca8804897000899f94d/screenshot.png"
+							"https://lh3.google.com/u/0/d/1fZuZSWHt-4xXCne2YDOEmI5US9DJ23PL=w1280-h590-iv1",
+							"https://lh3.google.com/u/0/d/11z69uoYP9aFx7j3j73hOO4RN7f_1sE8E=w1280-h590-iv1",
+							"https://lh3.google.com/u/0/d/1uqM17chJMleayfIgesX2_GgtWMqE0k8D=w1280-h590-iv1"
 						],
 						title: "Todos",
 						text:
-							"Vestibulum in dictum velit, in rhoncus nibh. Maecenas neque libero, interdum a dignissim in, aliquet vitae lectus. Phasellus lorem enim, luctus ut velit eget.",
+							"A <b>CRUD</b> app with user authentication, built with <b>VueJS</b> and <b>Vuetify</b>.",
 						backEnd: {
-							techs: ["Python", "Flask", "MongoDB"],
 							repo: "https://github.com/JMaylor/task-manager-api"
 						},
 						frontEnd: {
-							techs: ["mdi-vuejs", "mdi-vuetify"],
 							repo: "https://github.com/JMaylor/todos",
 							live: "https://todos.maylor.io"
 						}

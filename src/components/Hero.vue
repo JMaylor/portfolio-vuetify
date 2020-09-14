@@ -20,9 +20,9 @@
 									class="font-weight-light"
 								>MAYLOR</span>
 							</v-col>
-							<!-- <v-col class="text-center pt-0" cols="12">
+							<v-col class="text-center pt-0" cols="12">
 								<Social />
-							</v-col> -->
+							</v-col>
 
 							<v-col class="white--text text-center" cols="12">
 								<v-btn class="navigator" fab outlined @click="$vuetify.goTo('#intro')">
@@ -38,10 +38,10 @@
 </template>
 
 <script>
-// import Social from "@/components/Social"
+import Social from "@/components/Social"
 export default {
 	components: {
-		// Social
+		Social
 	}
 }
 </script>

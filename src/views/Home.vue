@@ -5,6 +5,7 @@
 			<Intro />
 			<CV />
 			<Projects />
+			<Courses />
 			<v-row class="text-center">
 				<v-col class="text-center">
 					<Social />
@@ -20,13 +21,15 @@
 	import CV from "@/components/CV";
 	import Projects from "@/components/Projects";
 	import Social from "@/components/Social"
+	import Courses from "@/components/Courses"
 	export default {
 		components: {
 			Hero,
 			Intro,
 			CV,
 			Projects,
-			Social
+			Social,
+			Courses
 		},
 		data() {
 			return {};

@@ -44,7 +44,7 @@
 
 						<v-card-title class="justify-center font-weight-black text-uppercase" v-text="title"></v-card-title>
 
-						<v-card-text class="subtitle-1" v-text="text"></v-card-text>
+						<v-card-text class="subtitle-1" v-html="text"></v-card-text>
 					</v-card>
 				</v-col>
 			</v-row>
@@ -73,19 +73,19 @@
 						icon: "mdi-school-outline",
 						title: "Education",
 						text:
-							"High achiever, with a 1st in Maths from the University of Warwick, and three A*s at A-Level in Maths, Further Maths and Economics."
+							"High achiever, with a <b>1st</b> in <b>Maths</b> from the University of <b>Warwick</b>, and three A*s at A-Level in Maths, Further Maths and Economics."
 					},
 					{
 						icon: "mdi-briefcase-outline",
 						title: "Employment",
 						text:
-							"Five years of experience in Foreign Exchange trading. Promoted from entry level analyst to Associate Director in four years."
+							"Five years of experience in Foreign Exchange trading. Promoted from entry level analyst to <b>Associate Director</b> in four years."
 					},
 					{
 						icon: "mdi-certificate",
 						title: "Courses",
 						text:
-							"Have taken Udemy courses on HTML, CSS, JavaScript, NodeJS and VueJS. Details of these courses can be found below."
+							"Have taken Udemy courses on <b>HTML</b>, CSS, <b>JavaScript</b>, NodeJS and VueJS, as well as free YouTube courses on <b>Python</b>, Flask and Django."
 					}
 				]
 			};

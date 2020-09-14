@@ -34,11 +34,11 @@ import Social from "@/components/Social.vue"
 		transition: transform 0.6s ease-in-out, color 2s;
 	}
 	.navigator-icon:hover {
-		-webkit-transform: rotate(360deg) scale(1.4);
-		transform: rotate(360deg) scale(1.4);
+		-webkit-transform: rotate(360deg) scale(1.5);
+		transform: rotate(360deg) scale(1.5);
 	}
 	.navigator:hover {
-		-webkit-transform: scale(1.4);
-		transform: scale(1.4);
+		-webkit-transform: scale(1.3);
+		transform: scale(1.3);
 	}
 </style>
