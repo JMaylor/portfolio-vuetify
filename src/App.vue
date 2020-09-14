@@ -1,32 +1,44 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+	<v-app>
+		<v-app-bar app flat dense color="white">
+			<v-row class="text-center">
+				<v-col class="text-center">
+					<Social />
+				</v-col>
+			</v-row>
+		</v-app-bar>
+		<router-view ></router-view>
+	</v-app>
 </template>
 
+<script>
+import Social from "@/components/Social.vue"
+	export default {
+		name: "App",
+		components: {
+			Social
+		},
+		data: () => ({
+			//
+		})
+	};
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+	section {
+		min-height: 100vh;
+	}
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+	.navigator,
+	.navigator-icon {
+		-webkit-transition: -webkit-transform 0.6s ease-in-out;
+		transition: transform 0.6s ease-in-out, color 2s;
+	}
+	.navigator-icon:hover {
+		-webkit-transform: rotate(360deg) scale(1.4);
+		transform: rotate(360deg) scale(1.4);
+	}
+	.navigator:hover {
+		-webkit-transform: scale(1.4);
+		transform: scale(1.4);
+	}
 </style>
