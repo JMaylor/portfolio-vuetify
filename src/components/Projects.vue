@@ -89,11 +89,12 @@
 				articles: [
 					{
 						images: [
-							"https://lh3.google.com/u/0/d/1vwBpg_GKNphXkKfGCsHcUADPyVCSNgqr=w1280-h891-iv1",
-							"https://lh3.google.com/u/0/d/1Vpz0LmSyGN-obmum4M6wy6eX5XNDt6Qb=w1280-h891-iv1",
-							"https://lh3.google.com/u/0/d/1X2zZciwdxdrpq6cKy2A21SUEZxpMBFIj=w1280-h590-iv1",
-							"https://lh3.google.com/u/0/d/1ggtNKNp0Ogdtw92tL50mEXBCLiax8Lf_=w1280-h590-iv1",
-							"https://lh3.google.com/u/0/d/1nq7TxxqgYPkK-bWIko7Al7MGBhltLV47=w1280-h590-iv1"
+							require("@/assets/walkies-1.png"),
+							require("@/assets/walkies-2.png"),
+							require("@/assets/walkies-3.png"),
+							require("@/assets/walkies-4.png"),
+							require("@/assets/walkies-5.png"),
+							require("@/assets/walkies-6.png")
 						],
 						title: "Walkies",
 						text:
@@ -109,8 +110,8 @@
 					},
 					{
 						images: [
-							"https://lh3.google.com/u/0/d/1pMHVTtoBCjFDezopKKd-655hIVDIps38=w3000-h6495-iv1",
-							"https://lh3.google.com/u/0/d/10LHKToGaZiW7ZIypb-_H9RlBLxKB1vqe=w1280-h891-iv1"
+							require("@/assets/pokedex-1.png"),
+							require("@/assets/pokedex-2.png")
 						],
 						title: "Pokedex",
 						text:
@@ -125,9 +126,9 @@
 					},
 					{
 						images: [
-							"https://lh3.google.com/u/0/d/10cUUfu49oCv_U-z8wZVSdWieF83ishAM=w1280-h590-iv1",
-							"https://lh3.google.com/u/0/d/1viFOjgBK9ddZQhwQC8Kl4FFg7v0U4fPZ=w1280-h590-iv1",
-							"https://lh3.google.com/u/0/d/1dxTRXfLo8F1rCd5Q158-U63eXyQhBL8i=w1280-h590-iv1"
+							require("@/assets/weather-1.png"),
+							require("@/assets/weather-2.png"),
+							require("@/assets/weather-3.png")
 						],
 						title: "Weather",
 						text:
@@ -142,9 +143,9 @@
 					},
 					{
 						images: [
-							"https://lh3.google.com/u/0/d/1fZuZSWHt-4xXCne2YDOEmI5US9DJ23PL=w1280-h590-iv1",
-							"https://lh3.google.com/u/0/d/11z69uoYP9aFx7j3j73hOO4RN7f_1sE8E=w1280-h590-iv1",
-							"https://lh3.google.com/u/0/d/1uqM17chJMleayfIgesX2_GgtWMqE0k8D=w1280-h590-iv1"
+							require("@/assets/todos-1.png"),
+							require("@/assets/todos-2.png"),
+							require("@/assets/todos-3.png")
 						],
 						title: "Todos",
 						text:
