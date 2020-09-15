@@ -73,8 +73,8 @@
 	}
 
 	[class*="mdi"] {
-		-webkit-transition: -webkit-transform 2s ease-in-out;
-		transition: transform 2s ease-in-out, color 2s;
+		-webkit-transition: -webkit-transform 0.5s ease-in-out;
+		transition: transform 0.5s ease-in-out;
 	}
 
 	[class*="mdi"]:hover {
