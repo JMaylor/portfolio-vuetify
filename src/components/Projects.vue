@@ -63,6 +63,13 @@
 									</v-avatar>View Live
 								</v-chip>
 							</a>
+							<a v-if="frontEnd.alternate" class="text-decoration-none" :href="frontEnd.alternate" target="_blank">
+								<v-chip class="ma-2" color="deep-orange accent-1" text-color="white">
+									<v-avatar left>
+										<v-icon>mdi-star-outline</v-icon>
+									</v-avatar>In progress - New Front End Site
+								</v-chip>
+							</a>
 						</v-row>
 					</v-container>
 					<v-divider />
@@ -105,7 +112,8 @@
 						},
 						frontEnd: {
 							repo: "https://github.com/JMaylor/walkies-frontend",
-							live: "https://walkies.maylor.io"
+							live: "https://walkies.maylor.io",
+							alternate: "https://distracted-lewin-e16b92.netlify.app/"
 						}
 					},
 					{
