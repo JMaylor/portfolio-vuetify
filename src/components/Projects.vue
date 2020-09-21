@@ -119,7 +119,7 @@
 							db: 'https://dbdiagram.io/d/5f3d0d59cf48a141ff556e74'
 						},
 						frontEnd: {
-							repo: "https://github.com/JMaylor/walkies-frontend",
+							repo: "https://github.com/JMaylor/walkies-vuetify",
 							live: "https://walkies.maylor.io"
 						}
 					},
