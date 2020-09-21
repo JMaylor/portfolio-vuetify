@@ -63,6 +63,13 @@
 									</v-avatar>View Live
 								</v-chip>
 							</a>
+							<a v-if="backEnd.db" class="text-decoration-none" :href="backEnd.db" target="_blank">
+								<v-chip class="ma-2" color="primary accent-1" text-color="white">
+									<v-avatar left>
+										<v-icon>mdi-database</v-icon>
+									</v-avatar>Database Diagram
+								</v-chip>
+							</a>
 							<a v-if="frontEnd.alternate" class="text-decoration-none" :href="frontEnd.alternate" target="_blank">
 								<v-chip class="ma-2" color="deep-orange accent-1" text-color="white">
 									<v-avatar left>
@@ -108,12 +115,12 @@
 							"I built a website for dog owners who sometimes want some human company while they walk their pets. A <b>RESTful API</b> built with <b>Python</b>/Flask performs <b>geoqueries</b> with location data in <b>MongoDB</b>, allowing you to find other users nearby, and arrange to meet up with them. The front end is built with <b>VueJS, Vuex and Vue Router</b>.",
 						fatechs: ["mdi-vuejs"],
 						backEnd: {
-							repo: "https://github.com/JMaylor/walkies-backend"
+							repo: "https://github.com/JMaylor/walkies-backend",
+							db: 'https://dbdiagram.io/d/5f3d0d59cf48a141ff556e74'
 						},
 						frontEnd: {
 							repo: "https://github.com/JMaylor/walkies-frontend",
-							live: "https://walkies.maylor.io",
-							alternate: "https://distracted-lewin-e16b92.netlify.app/"
+							live: "https://walkies.maylor.io"
 						}
 					},
 					{
