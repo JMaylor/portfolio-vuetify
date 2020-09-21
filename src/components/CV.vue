@@ -3,7 +3,11 @@
 		<div class="py-12"></div>
 
 		<v-container class="text-center">
-			<h2 class="display-2 font-weight-bold mb-3 teal--text text--darken-2">CV</h2>
+			<h2
+				class="display-2 font-weight-bold mb-3 teal--text text--darken-2"
+			>
+				CV
+			</h2>
 
 			<v-responsive class="mx-auto" width="56">
 				<v-divider class="mb-1"></v-divider>
@@ -17,10 +21,29 @@
 						href="https://docs.google.com/document/d/15uINqDliusAEY3P7R-O6oCL00XmY95WvGDgCwH1TlFI/edit?usp=sharing"
 						target="_blank"
 					>
-						<v-chip class="ma-2" color="orange lighten-2" text-color="white">
+						<v-chip
+							class="ma-2"
+							color="orange lighten-2"
+							text-color="white"
+						>
 							<v-avatar left>
-								<v-icon>mdi-school-outline</v-icon>
-							</v-avatar>View on Google Docs
+								<v-icon>mdi-school-outline</v-icon> </v-avatar
+							>View on Google Docs
+						</v-chip> </a
+					><br />
+					<a
+						class="text-decoration-none"
+						:href="`${publicPath}Joseph Maylor CV.pdf`"
+						download
+					>
+						<v-chip
+							class="ma-2"
+							color="teal lighten-2"
+							text-color="white"
+						>
+							<v-avatar left>
+								<v-icon>mdi-file-pdf</v-icon> </v-avatar
+							>Download as PDF
 						</v-chip>
 					</a>
 				</v-col>
@@ -32,7 +55,12 @@
 			</v-responsive>
 
 			<v-row>
-				<v-col v-for="({ icon, title, text }, i) in features" :key="i" cols="12" md="4">
+				<v-col
+					v-for="({ icon, title, text }, i) in features"
+					:key="i"
+					cols="12"
+					md="4"
+				>
 					<v-card class="py-12 px-4" color="grey lighten-5" flat>
 						<v-theme-provider dark>
 							<div>
@@ -42,20 +70,40 @@
 							</div>
 						</v-theme-provider>
 
-						<v-card-title class="justify-center font-weight-black text-uppercase" v-text="title"></v-card-title>
+						<v-card-title
+							class="justify-center font-weight-black text-uppercase"
+							v-text="title"
+						></v-card-title>
 
-						<v-card-text class="subtitle-1" v-html="text"></v-card-text>
+						<v-card-text
+							class="subtitle-1"
+							v-html="text"
+						></v-card-text>
 					</v-card>
 				</v-col>
 			</v-row>
 			<v-row class="justify-center mb-2">
-				<v-btn class="navigator" fab outlined @click="$vuetify.goTo('#intro')">
-					<v-icon class="navigator-icon">mdi-chevron-double-up</v-icon>
+				<v-btn
+					class="navigator"
+					fab
+					outlined
+					@click="$vuetify.goTo('#intro')"
+				>
+					<v-icon class="navigator-icon"
+						>mdi-chevron-double-up</v-icon
+					>
 				</v-btn>
 			</v-row>
 			<v-row class="justify-center">
-				<v-btn class="align-self-end navigator" fab outlined @click="$vuetify.goTo('#projects')">
-					<v-icon class="navigator-icon">mdi-chevron-double-down</v-icon>
+				<v-btn
+					class="align-self-end navigator"
+					fab
+					outlined
+					@click="$vuetify.goTo('#projects')"
+				>
+					<v-icon class="navigator-icon"
+						>mdi-chevron-double-down</v-icon
+					>
 				</v-btn>
 			</v-row>
 		</v-container>
@@ -68,6 +116,7 @@
 	export default {
 		data() {
 			return {
+				publicPath: process.env.BASE_URL,
 				features: [
 					{
 						icon: "mdi-school-outline",
