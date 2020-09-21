@@ -14,7 +14,7 @@
 				<v-col class="text-center">
 					<a
 						class="text-decoration-none"
-						href="https://docs.google.com/document/d/1VMJeoFwGZRVdtvVE5DIxDz7ffLdfMTlYcVx5BXuMCwI/edit?usp=sharing"
+						href="https://docs.google.com/document/d/15uINqDliusAEY3P7R-O6oCL00XmY95WvGDgCwH1TlFI/edit?usp=sharing"
 						target="_blank"
 					>
 						<v-chip class="ma-2" color="orange lighten-2" text-color="white">
