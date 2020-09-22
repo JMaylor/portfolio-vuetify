@@ -112,7 +112,7 @@
 						],
 						title: "Walkies",
 						text:
-							"I built a website for dog owners who sometimes want some human company while they walk their pets. A <b>RESTful API</b> built with <b>Python</b>/Flask performs <b>geoqueries</b> with location data in <b>MongoDB</b>, allowing you to find other users nearby, and arrange to meet up with them. The front end is built with <b>VueJS, Vuex and Vue Router</b>.",
+							"I built a website for dog owners who sometimes want some human company while they walk their pets. A <b>RESTful API</b> built with <b>Python</b>/Flask performs <b>geoqueries</b> with location data in <b>MongoDB</b>, allowing you to find other users nearby, and arrange to meet up with them. The front end is built with <b>VueJS, Vuex and Vue Router</b>. Please note the API is hosted using free dynos on heroku, so may be 'asleep'. This should wake up 5-10 seconds after the first request you make.",
 						fatechs: ["mdi-vuejs"],
 						backEnd: {
 							repo: "https://github.com/JMaylor/walkies-backend",
