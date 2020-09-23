@@ -164,7 +164,7 @@
 						],
 						title: "Todos",
 						text:
-							"A <b>CRUD</b> app with user authentication, built with <b>VueJS</b> and <b>Vuetify</b>.",
+							"A <b>CRUD</b> app with user authentication, built with <b>VueJS</b> and <b>Vuetify</b>. The back-end API is built with <b>NodeJS</b> and <b>Express</b>, with <b>MongoDB</b> as the database.",
 						backEnd: {
 							repo: "https://github.com/JMaylor/task-manager-api"
 						},
