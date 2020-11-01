@@ -19,7 +19,8 @@
 			</v-responsive>
 
 			<v-avatar class="elevation-6 mb-12" size="128">
-				<span class="teal--text display-3">JM</span>
+				<!-- <span class="teal--text display-3">JM</span> -->
+        <img :src="require('@/assets/logo.svg')" alt="Maylor Avatar">
 			</v-avatar>
 
 			<div></div>
